@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/main_screen"
+    tools:context="com.example.winson.charades.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="text"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="65dp"
+        android:maxWidth="1000dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="35dp"
+        android:id="@+id/timer"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensitivity"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:text="LOW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lowSens"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="NORMAL"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/normalSens"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="HIGH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/highSens"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/buttons">
+        <Button
+            android:text="PLAY"
+            android:onClick="play"
+            android:layout_width="1dp"
+            android:layout_height="75dp"
+            android:id="@+id/button"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="HELP"
+            android:onClick="showHelp"
+            android:layout_width="1dp"
+            android:layout_height="75dp"
+            android:textSize="25dp"
+            android:id="@+id/help"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="75dp"
+            android:text="HIGHSCORES"
+            android:textSize="25dp"
+            android:layout_weight="1.5"
+            android:id="@+id/hsButton"
+            android:onClick="showHighscores"/>
+    </LinearLayout>
+    <TextView
+        android:text="SENSITIVITY:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/sensitivity"
+        android:layout_below="@id/buttons"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:text="1.\n2.\n3.\n4.\n5."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textSize="25dp"
+            android:id="@+id/names"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="1\n2\n3\n4\n5"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:visibility="invisible"
+            android:id="@+id/scores"
+            android:layout_weight="1" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORDS\nLIST"
+            android:layout_marginLeft="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="25dp"
+            android:id="@+id/showWordsListButton"
+            android:onClick="showWordList"
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</RelativeLayout>

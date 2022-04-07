@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Charades!</string>
+    <string name="title">Charades!\n<b>NUSH Edition</b></string>
+    <string-array name="words">
+        <item>university</item>
+        <item>pet store</item>
+        <item>bonnet</item>
+        <item>retail</item>
+        <item>print</item>
+        <item>cot</item>
+        <item>baggage</item>
+        <item>lumberyard</item>
+        <item>servant</item>
+        <item>stow</item>
+        <item>stage</item>
+        <item>police</item>
+        <item>conveyor belt</item>
+        <item>beanstalk</item>
+        <item>bookstore</item>
+        <item>loveseat</item>
+        <item>miner</item>
+        <item>fizz</item>
+        <item>double</item>
+        <item>nanny</item>
+        <item>movie</item>
+        <item>vision</item>
+        <item>population</item>
+        <item>password</item>
+        <item>system</item>
+        <item>irrational</item>
+        <item>fake flowers</item>
+        <item>turret</item>
+        <item>steamboat</item>
+        <item>ironic</item>
+        <item>gymnast</item>
+        <item>opinion</item>
+        <item>hypothermia</item>
+        <item>freshwater</item>
+        <item>Atlantis</item>
+        <item>layover</item>
+        <item>cartoonist</item>
+        <item>education</item>
+        <item>deceive</item>
+        <item>translate</item>
+        <item>voicemail</item>
+        <item>zip code</item>
+        <item>leap year</item>
+        <item>implode</item>
+        <item>handful</item>
+        <item>wealth</item>
+        <item>income tax</item>
+        <item>retire</item>
+        <item>infection</item>
+        <item>shame</item>
+        <item>soulmate</item>
+        <item>comparison</item>
+        <item>creator</item>
+        <item>climate</item>
+        <item>doubt</item>
+    </string-array>
+</resources>
